@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "notion-comments-parser"
+version = "0.1.0"
+description = ""
+authors = ["pten4uk <pten4ik99@yandex.ru>"]
+readme = "README.md"
+packages = [{include = "notion_comments_parser"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+httpx = "^0.23.3"
+pydantic = {extras = ["dotenv"], version = "^1.10.5"}
+geopy = "^2.3.0"
+asyncio = "^3.4.3"
+aiohttp = "^3.8.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
